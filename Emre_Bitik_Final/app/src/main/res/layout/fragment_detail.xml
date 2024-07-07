@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.DetailFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#97EAB3">
+
+        <ImageButton
+            android:id="@+id/d_like"
+            android:layout_width="150dp"
+            android:layout_height="73dp"
+            android:layout_marginTop="12dp"
+            android:background="#97EAB3"
+            android:src="@drawable/dont_like"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.484"
+            app:layout_constraintStart_toEndOf="@+id/d_addorder"
+            app:layout_constraintTop_toBottomOf="@+id/d_warranty"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/d_image"
+            android:layout_width="346dp"
+            android:layout_height="248dp"
+            android:layout_marginTop="24dp"
+            android:background="#97EAB3"
+            android:inAnimation="@android:anim/fade_in"
+            android:outAnimation="@android:anim/fade_out"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:scaleType="fitCenter"
+            tools:ignore="SpeakableTextPresentCheck">
+
+        </ImageButton>
+
+        <TextView
+            android:id="@+id/d_brand"
+            android:layout_width="183dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="20dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/d_image" />
+
+        <TextView
+            android:id="@+id/d_detail"
+            android:layout_width="364dp"
+            android:layout_height="85dp"
+            android:layout_marginTop="44dp"
+            android:background="#FFFFFF"
+            android:fontFamily="sans-serif-medium"
+            android:text="TextView"
+            android:textColor="#1F2C37"
+            android:typeface="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/d_brand" />
+
+        <TextView
+            android:id="@+id/d_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="TextView"
+            android:textColor="#AA2121"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/d_detail" />
+
+        <TextView
+            android:id="@+id/d_warranty"
+            android:layout_width="378dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="28dp"
+            android:background="#FFFFFF"
+            android:text="TextView"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.484"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/d_price" />
+
+        <Button
+            android:id="@+id/d_addorder"
+            style="@style/Widget.Material3.CardView.Elevated"
+            android:layout_width="182dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
+            android:stateListAnimator="@android:animator/fade_in"
+            android:text="Add to Orders"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/d_warranty"
+            app:rippleColor="@color/black"
+            app:shapeAppearance="@style/MaterialAlertDialog.Material3.Body.Text"
+            app:strokeColor="@color/black" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

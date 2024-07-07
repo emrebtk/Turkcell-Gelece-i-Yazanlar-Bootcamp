@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+
+    <entry>
+        <key>backGroundColor</key>
+        <value>#ffffff</value>
+    </entry>
+    <entry>
+        <key>title</key>
+        <value>Remote config </value>
+    </entry>
+</defaultsMap>
